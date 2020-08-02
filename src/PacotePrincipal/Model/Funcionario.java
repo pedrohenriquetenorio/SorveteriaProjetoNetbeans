@@ -11,4 +11,11 @@ package PacotePrincipal.Model;
  */
 public class Funcionario {
     
+    private String nome; 
+    private String cpf;
+    private String endereço;
+    private String telefone;
+    private String email;
+    private String 
+    
 }
