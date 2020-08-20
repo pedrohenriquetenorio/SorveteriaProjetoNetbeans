@@ -5,10 +5,18 @@
  */
 package PacotePrincipal.Model.DAO;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 /**
  *
  * @author pedro
  */
 public class ConnectionMVC {
+    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("ProjetoSorveteriaPU");
+      public EntityManager getConnection(){
+      return emf.createEntityManager();
+     }
     
 }

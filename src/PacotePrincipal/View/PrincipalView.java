@@ -149,7 +149,7 @@ public class PrincipalView extends javax.swing.JFrame {
 
 /// ARRUMAR ISSO +++ADICIONAR UMA TELA DO FUNCIONARIO DENTRO DO MENU PRINCIPAL +++
     private void jMenuFuncionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuFuncionarioActionPerformed
-        
+       
         new FuncionarioView().setVisible(true);
         
     }//GEN-LAST:event_jMenuFuncionarioActionPerformed

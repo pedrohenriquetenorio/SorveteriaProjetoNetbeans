@@ -5,7 +5,10 @@
  */
 package PacotePrincipal.Model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
@@ -14,13 +17,21 @@ import javax.persistence.Id;
  */
 @Entity 
 public class Funcionario {
-    @Id
+   @Id
+   //@GeneratedValue(strategy = GenerationType.IDENTITY)
+   @Column(name = "cod_funcionario", length = 15, nullable = false)
     private int codFuncionario;
+    @Column(name = "cpf", length = 15, nullable = false)
     private String cpf;
+    @Column(name = "nome", length = 45, nullable = false)
     private String nome; 
+    @Column(name = "senha", length = 20, nullable = false)
     private String senha;
-    private String endereço;
+    @Column(name = "endereco", length = 45, nullable = false)
+    private String endereco;
+    @Column(name = "telefone", length = 15, nullable = false)
     private String telefone;
+    @Column(name = "email", length = 45, nullable = false)
     private String email;
 //    private String cargo;
 
@@ -29,12 +40,12 @@ public class Funcionario {
     
     }
 
-    public Funcionario(int codFuncionario, String cpf, String nome, String senha, String endereço, String telefone, String email) {
+    public Funcionario(int codFuncionario, String cpf, String nome, String senha, String endereco, String telefone, String email) {
         this.codFuncionario = codFuncionario;
         this.cpf = cpf;
         this.nome = nome;
         this.senha = senha;
-        this.endereço = endereço;
+        this.endereco = endereco;
         this.telefone = telefone;
         this.email = email;
     }
@@ -55,8 +66,8 @@ public class Funcionario {
         return cpf;
     }
 
-    public String getEndereço() {
-        return endereço;
+    public String getEndereco() {
+        return endereco;
     }
 
     public String getTelefone() {
@@ -78,9 +89,13 @@ public class Funcionario {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-
-    public void setEndereço(String endereço) {
-        this.endereço = endereço;
+    
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+    
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 
     public void setTelefone(String telefone) {
@@ -91,8 +106,20 @@ public class Funcionario {
         this.email = email;
     }
 
+    public void setCodFuncionario(int codFuncionario) {
+        this.codFuncionario = codFuncionario;
+    }
+
+    
+    
 //    public void setCargo(String cargo) {
 //        this.cargo = cargo;
 //    }
+
+    @Override
+    public String toString() {
+        return "Funcionario{" + "codFuncionario=" + codFuncionario + ", cpf=" + cpf + ", nome=" + nome + ", senha=" + senha + ", endereco=" + endereco + ", telefone=" + telefone + ", email=" + email + '}';
+    }
+
     
 }

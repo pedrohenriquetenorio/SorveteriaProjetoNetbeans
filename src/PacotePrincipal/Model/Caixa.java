@@ -6,6 +6,7 @@
 package PacotePrincipal.Model;
 
 import java.util.Date;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -16,7 +17,9 @@ import javax.persistence.Id;
 @Entity
 public class Caixa {
     @Id
+    @Column(name = "cod_funcionario", length = 15, nullable = false)
     int codCaixa;
+    @Column(name = "cod_funcionario", length = 15, nullable = false)
     Date data;
 
     public Caixa() {

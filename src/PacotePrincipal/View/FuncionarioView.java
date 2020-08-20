@@ -295,6 +295,7 @@ public class FuncionarioView extends javax.swing.JFrame {
 
     private void jButtonCadastrarFuncionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCadastrarFuncionarioActionPerformed
         jButtonCadastrarFuncionario.getAction();
+        new CadastroFuncionario().setVisible(true);
     }//GEN-LAST:event_jButtonCadastrarFuncionarioActionPerformed
 
     /**
