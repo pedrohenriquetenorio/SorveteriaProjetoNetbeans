@@ -18,7 +18,7 @@ import javax.persistence.Id;
 @Entity 
 public class Funcionario {
    @Id
-   //@GeneratedValue(strategy = GenerationType.IDENTITY)
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
    @Column(name = "cod_funcionario", length = 15, nullable = false)
     private int codFuncionario;
     @Column(name = "cpf", length = 15, nullable = false)

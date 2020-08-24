@@ -17,9 +17,9 @@ import javax.persistence.Id;
 @Entity
 public class Caixa {
     @Id
-    @Column(name = "cod_funcionario", length = 15, nullable = false)
+   // @Column(name = "cod_funcionario", length = 15, nullable = false)
     int codCaixa;
-    @Column(name = "cod_funcionario", length = 15, nullable = false)
+   // @Column(name = "cod_funcionario", length = 15, nullable = false)
     Date data;
 
     public Caixa() {

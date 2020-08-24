@@ -306,7 +306,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         ObjetoFuncionario.setEmail(jTextFieldEmail.getText());
         ObjetoFuncionario.setSenha(jTextFieldSenha.getText());
         ObjetoFuncionario.setEndereco(jTextFieldEndereco.getText()+jTextFieldNumero.getText()+jTextFieldBairro.getText());
-        ObjetoFuncionario.setCodFuncionario(1);
+        //ObjetoFuncionario.setCodFuncionario(1);
         
         // Retorno de toString para checagem
         System.out.println(ObjetoFuncionario.toString());
